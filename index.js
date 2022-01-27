@@ -4,6 +4,6 @@ const PORT = process.env.PORT || 5000
 
 app.get("/", (req, res) => res.render("pages/index"))
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`)
 })
