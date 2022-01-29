@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heroku API client</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script type="text/javascript" src="main.js" defer></script>
+  </head>
+  <body>
+    <h1>CRUD client utility for heroku test server</h1>
+
+    <h2>CREATE DATA</h2>
+    <div>
+      <div><label for="username">User Name</label> <input id="username" type="text" value="username" /></div>
+      <div><label for="password">Password</label> <input id="password" type="text" value="password" /></div>
+      <div><label for="email">Email</label> <input id="email" type="text" value="email" /></div>
+      <button id="createButton">Create Account</button>
+    </div>
+
+    <h2>READ DATA</h2>
+    <div>
+      <button id="readButton">Read Accounts to Console</button>
+    </div>
+
+    <h2>UPDATE DATA</h2>
+    <div>
+      <div><label for="username">User Name</label> <input id="updateusername" type="text" value="username" /></div>
+      <div><label for="password">New Password</label> <input id="newpassword" type="text" value="password" /></div>
+      <div><label for="email">New Email</label> <input id="newemail" type="text" value="email" /></div>
+      <button id="updateButton">UPDATE Account</button>
+    </div>
+  </body>
+
+  <h2>DELETE DATA</h2>
+  <div>
+    <div><label for="removeusername">User Name</label> <input id="removeusername" type="text" value="username" /></div>
+    <button id="deleteButton">Delete Account</button>
+  </div>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</html>
