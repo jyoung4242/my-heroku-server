@@ -6,6 +6,10 @@ app.get("/", (req, res) => {
   res.status(200).send("Hello world")
 })
 
+app.get("/test", (req, res) => {
+  res.status(200).send("TESTING SUCCESSFUL")
+})
+
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`)
 })
